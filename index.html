@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Cursos Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Cursos Online</div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="cart-container">
+      <button class="cart-btn">Carrito (0)</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Nuestros Cursos</h2>
+    <div id="courses">
+      <!-- Curso 1 -->
+      <div class="course">
+        <img src="https://via.placeholder.com/300x200" alt="Curso de Programación Web">
+        <h3>Curso de Programación Web</h3>
+        <p>Aprende a crear sitios web modernos desde cero. Conoce HTML, CSS, y JavaScript.</p>
+        <p class="price">$200</p>
+        <button class="add-to-cart-btn">Añadir al Carrito</button>
+      </div>
+
+      <!-- Curso 2 -->
+      <div class="course">
+        <img src="https://via.placeholder.com/300x200" alt="Curso de Marketing Digital">
+        <h3>Curso de Marketing Digital</h3>
+        <p>Domina las herramientas y estrategias de marketing para tu negocio en línea.</p>
+        <p class="price">$150</p>
+        <button class="add-to-cart-btn">Añadir al Carrito</button>
+      </div>
+
+      <!-- Curso 3 -->
+      <div class="course">
+        <img src="https://via.placeholder.com/300x200" alt="Curso de Diseño Gráfico">
+        <h3>Curso de Diseño Gráfico</h3>
+        <p>Aprende a crear diseños gráficos con herramientas profesionales como Photoshop.</p>
+        <p class="price">$180</p>
+        <button class="add-to-cart-btn">Añadir al Carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal Carrito -->
+  <div class="cart-modal" id="cart-modal">
+    <button class="close-cart-btn" id="close-cart-btn">X</button>
+    <h3>Tu Carrito</h3>
+    <ul id="cart-list"></ul>
+    <button id="clear-cart-btn">Vaciar Carrito</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

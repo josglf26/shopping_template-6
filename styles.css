@@ -1,0 +1,204 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .cart-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .cart-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .cart-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  #courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .course {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    width: 280px;
+    text-align: center;
+  }
+  
+  .course:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .course h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+  
+  .course p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Carrito Modal */
+  .cart-modal {
+    position: absolute;
+    top: 60px; /* Ajustado para aparecer justo debajo del botón de carrito */
+    right: 0;
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+  }
+  
+  .cart-modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-modal ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  #clear-cart-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  #clear-cart-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .close-cart-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .cart-modal {
+      width: 80%;
+      left: 10%;
+      top: 60px;
+    }
+  
+    #courses {
+      justify-content: center;
+    }
+  
+    .cart-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #courses {
+      justify-content: center;
+    }
+  }
+  
